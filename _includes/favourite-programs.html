@@ -1,0 +1,39 @@
+<section>
+
+    <div class="grid padded">
+
+        <div class="col-12 padded-1 padded-b-1">
+            <h3 class="big-text editable">favourite programs.</h3>
+        </div>
+
+        <div class="col-12 horizontal-scroll grid-equalHeight">
+
+            {% assign favourite-programs = site.programs | where_exp: "program", "program.favourite == true" %}
+
+            <!-- CARDS -->
+            {% for program in favourite-programs or for post in favourite-posts limit: 6 %}
+            <div class="col-4_sm-7_xs-11 padded-1 padded-t-0"> 
+
+                <div class="bg-yellow padded-sm bg-radius-md relative">
+                    <div class="bg-image landscape bg-radius-md" style="background-image: url('{{ program.featured_image }}');"></div>
+                    <div class="padded center padded-b-25">
+                        <h3> {{program.title }} </h3>
+                        <p>{{program.card-description }}</p>
+                    </div>
+                    <div class="padded center pos-bottom2">
+                        <a href="{{program.live_url }}" class="button-inverted"> View Details </a>
+                    </div>
+                </div>
+                
+            </div>
+            {% endfor %}
+
+        </div> 
+        
+        <div class="col-12 padded-sm center">
+            <a href="#" class="button-blue">Start dveloping your human skills</a>
+        </div>
+
+    </div>
+    
+</section>

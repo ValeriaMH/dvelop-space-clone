@@ -1,0 +1,91 @@
+main-menu:
+  link-1:
+    name: Home
+    url: /index
+  link-2: 
+    name: Solutions
+    url: /index
+  link-3: 
+    name: Learn
+    url: /index
+  link-4: 
+    name: Why Dvelop
+    url: /why-dvelop
+  link-5: 
+    name: Book a free demo
+    url: /index
+  link-6:
+    name: Contact us
+    url: /contact-us
+solutions-co-menu:
+- name: Training Programs
+  url: /training-programs
+solutions-in-menu:
+- name: Memberships
+  url: /memberships
+programs-menu:
+- name: Team Development
+  url: /team-development
+- name: Organisational Culture
+  url: /index
+- name: Leadership
+  url: /index
+- name: Agile Ways of Working
+  url: /index
+- name: Mindfulness
+  url: /index
+resources-menu:
+- name: Blog
+  url: /blog
+why-dvelop1-menu:
+- name: About Us
+  url: /about-us
+why-dvelop2-menu:
+- name: Case Studies
+  url: /case-studies
+company-menu:
+- name: Contact us
+  url: /contact-us
+- name: Terms & Conditions
+  url: /terms-and-conditions
+- name: Privacy Policy
+  url: /privacy-policy
+social:
+  linkedin: true
+  linkedin-name: Linkedin
+  linkedin_url: https://www.linkedin.com
+  instagram: true
+  instagram-name: Instagram
+  instagram_url:
+  facebook: true
+  facebook-name: Facebook
+  facebook_url:
+  youtube: true
+  youtube-name: Youtube
+  youtube_url:
+  tik-tok: false
+  tik-tok-name: Tik Tok
+  tik-tok_url:
+  twitter: false
+  twitter-name: Twitter
+  twitter_url:
+  pinterest: false
+  pinterest-name: Pinterest
+  pinterest_url:
+quick-links:
+  link-1:
+    name: Lo más vendido
+    url: /index/#top
+    id: top
+  link-2: 
+    name: Servicios
+    url: /index/#servicios
+    id: servicios
+  link-3: 
+    name: Calificaciones
+    url: /index/#calificaciones
+    id: calificaciones
+  link-4: 
+    name: 35 años en fotos
+    url: /nosotros/#fotos
+    id: fotos

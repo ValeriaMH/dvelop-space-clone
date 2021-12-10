@@ -1,0 +1,27 @@
+    
+    <div class="col-12 grid-equalHeight no-border-b horizontal-scroll">
+    
+    {% assign featured-programs = site.programs | where_exp: "program", "program.featured == true and program.category contains page.category" %}
+
+        {% for program in featured-programs limit: 6 %}
+            
+        <div class="col-6_sm-11 padded-sm">
+
+            <a href="{{program.live_url }}">
+            
+                <div class="border-black card-sub padded padded-b-25 bg-radius-md sm-padded-b-25 relative">
+                    <div class="bg-image landscape-medium bg-radius-md bg-pos-t" style="background-image:url({{program.featured_image}})"></div>
+                    <h2 class="margin-t-1 program-text"> {{program.title}}</h2>
+                    <p class="margin-b-5">{{program.card-description }}</p>
+                    <a href="#" class="button margin-t-1 editable pos-bottom">Start today</a>
+                </div>
+                
+            </a>
+
+        </div>
+            
+            
+        {% endfor %}
+
+    </div>
+    

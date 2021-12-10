@@ -1,0 +1,212 @@
+---
+layout: default
+seo:
+  title: Home | Dvelop Space
+  description: Grow your human skills for a successful life
+  social_image:
+  keywords: ['marca personal, linkedin, marca personal digital, linkedin tips, hispanic business, hispanic marketing, hispanic woman, marca personal online']
+  hide-from-google: true
+start_image: /images/dvelop-space1.jpg
+banner-data_image: /images/dvelop-space6.jpg
+favourites:
+- banner_image: /images/dvelop-space5.jpg
+  title: Leadership
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nemo laboriosam deserunt unde labore nesciunt dolorem.
+  cta: Read
+  url: #
+  button: button-inverted
+- banner_image: /images/dvelop-space3.jpg
+  title: Team Development
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nemo laboriosam deserunt unde labore nesciunt dolorem.
+  cta: Watch
+  url: #
+  button: button-inverted
+- banner_image: /images/dvelop-space2.jpg
+  title: Problem Solving
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nemo laboriosam deserunt unde labore nesciunt dolorem.
+  cta: Start the program
+  url: /programs/problem-solving
+  button: button-blue
+- banner_image: /images/dvelop-space4.jpg
+  title: Conflict Resolution
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nemo laboriosam deserunt unde labore nesciunt dolorem.
+  cta: Watch
+  url: #
+  button: button-inverted
+solutions:
+- title: For Individuals
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum asperiores optio at voluptatem alias ratione deleniti, rem, culpa dolor tempora placeat debitis aliquam! At, dignissimos suscipit obcaecati quo vitae quas?
+  url: /for-individuals
+- title: For Companies
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum asperiores optio at voluptatem alias ratione deleniti, rem, culpa dolor tempora placeat debitis aliquam! At, dignissimos suscipit obcaecati quo vitae quas?
+  url: /for-companies
+case-study_image: /images/dvelop-space6.jpg
+book-demo_image: /images/dvelop-space3.jpg
+meet-video-id: o9uzJ0LgvT0
+---
+
+<!------------------------ BANNER & MENU ------------------>
+
+<header>
+
+    {% include header-nav.html %}
+
+    <div class="items-center tall-80 tall-70-sm dvelop-title">
+            
+        <h2>
+            <span class="small-text">Welcome to<br>
+            <span class="dvelop-title">dvelop space.</span>
+        </h2>
+            <!-- <span>scroll down</span> -->
+    </div>
+
+</header>
+
+<!------------------------ START HERE ------------------>
+
+<section>
+
+    <div class="grid capped-width-narrow padded-t">
+
+        <div class="col-12 center">
+
+            <h3 class="big-text editable">start here.</h3>
+
+        </div>
+
+        <div class="col-12 grid-middle">
+
+            <div class="col-6_sm-12 padded">
+                <div class="bg-image portrait sm-square" style="background-image: url('{{ page.start_image }}');"></div>
+            </div>
+
+            <div class="col-6_sm-12 padded">
+
+                <h4 class="editable">take the assessment.</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod repellendus deleniti mollitia rem unde? Facere animi mollitia deleniti? Minus veritatis maxime facilis libero soluta pariatur cupiditate distinctio illum maiores. Blanditiis.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod repellendus deleniti mollitia rem unde? Facere animi mollitia deleniti? Minus veritatis maxime facilis libero soluta pariatur cupiditate distinctio illum maiores. Blanditiis.</p>
+                <a href="#" class="button">start</a>
+            </div>
+
+        </div>
+
+    </div>
+    
+</section>
+
+<!------------------------ THE FAVOURITES ------------------>
+
+{% include favourite-programs.html %}
+
+<!--------------------- BANNER WITH DATA ------------------>
+
+<section class="bg-image bg-overlay bg-overlay-gradient tall-100 tall-50-md tall-50-sm bg-attached" style="background-image: url('{{ page.banner-data_image }}');">
+
+    <div class="grid padded-sm">
+
+        <div class="col-8_sm-12">
+            <h4 class="big-text white-text">Creating happy environments for successful people.</h4>
+        </div>
+
+    </div>
+    
+    
+</section>
+
+<!--------------------- SOLUTIONS ------------------>
+
+<section>
+
+    <div class="grid capped-width padded padded-b-md center">
+
+        <div class="col-12 padded-sm">
+            <h3 class="big-text"> a solution for everyone.</h3>
+        </div>
+
+        {% for item in page.solutions %}
+            <div class="col-6_sm-12 grid no-border-b">
+                <a href="{{item.url }}">
+                    <div class="col-12 padded-sm">
+                        <div class="card-sol bg-blue white-text bg-radius-md padded">
+                            <h3>{{item.title }}</h3>
+                            <p>{{item.description }}</p>
+                            <p class="xsmall-text padded padded-b-05">Click for details &#8702;</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<!--------------------- LATEST CASE STUDY ------------------>
+
+<section class="bg-black sm-padded-b">
+
+    <div class="grid-middle padded white-text capped-width-md">
+
+        <div class="col-12">
+            <h3 class="big-text editable">our latest case study.</h3>
+        </div>
+
+        <div class="col-5_sm-12 sm-padded-t-2">
+            <h4 class="medium-text editable">company name.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, numquam! Enim aliquid ducimus illum consectetur, animi itaque odio in laudantium ex corrupti minus quasi mollitia, cumque necessitatibus natus asperiores exercitationem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, numquam! Enim aliquid ducimus illum consectetur, animi itaque odio in laudantium ex corrupti minus quasi mollitia, cumque necessitatibus natus asperiores exercitationem!</p>
+            <a href="#" class="button-inverted sm-margin-b-2">Read more</a>
+        </div>
+
+        <div class="col-7_sm-12 padded sm-padded-0">
+            <div class="bg-image landscape bg-radius-lg" style="background-image: url('{{ page.case-study_image }}');"></div>
+        </div>
+
+    </div>
+
+</section>
+
+<!------------------------ MEET YOUR COACH ------------------>
+
+<section class="padded">
+    
+    <div class="grid padded capped-width-narrow center sm-padded-05 sm-padded-t-xlg">
+
+        <div class="col-12 padded-sm">
+            <h2 class="big-text"> meet your coach. </h2>
+        </div>
+
+        <div class="col-12">
+
+            <div class="embed-container bg-radius-md">
+              <iframe src="https://www.youtube.com/embed/{{page.meet-video-id }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+    </div>
+    
+</section>
+
+<!------------------------ BOOK A FREE CUSTOM DEMO ------------------>
+
+<section class="padded-sm">
+
+    <div class="grid padded padded-t-0">
+        <div class="col-12 bg-yellow grid-middle bg-radius-lg">
+
+            <div class="col-5_sm-12 padded">
+                <h4>book a free custom demo.</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae perspiciatis veritatis repellendus itaque, at ad minus facilis totam! Fugit officia eaque labore reprehenderit, perspiciatis dolorem maiores sunt dolores! Dicta, perspiciatis!</p>
+                <a class="button-blue">Book now</a>
+            </div>
+
+            <div class="col-7_sm-12 padded-sm">
+                <div class="bg-image landscape bg-radius-md" style="background-image: url('{{ page.book-demo_image }}');"></div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+

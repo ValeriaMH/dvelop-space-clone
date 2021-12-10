@@ -1,0 +1,164 @@
+---
+layout: default
+---
+
+<!------------------------ BANNER & MENU ------------------>
+
+<header>
+
+    {% include header-nav.html %}
+    
+</header>
+
+<div class="grid padded-t xs-padded-t-lg">
+    <div class="col-12">
+        <div class="padded-l-1 padded-b-2 sm-padded-l-0">
+            <h2 class="big-text sm-text-center">{{page.title }} Program</h2>
+        </div>
+        
+        <div class="bg-image landscape-small sm-landscape bg-pos-t" style="background-image: url('{{ page.banner-header_image }}');"></div>
+</div>
+
+<!------------------------ PROGRAM DESCRIPTION ------------------>
+
+<section>
+
+    <div class="grid">
+        
+        <div class="col-12 grid relative">
+            
+            <!-- CONTENT -->
+            <div class="col-8_sm-12 grid padding-special" id="pro-content">
+
+                 <!-- ABOUT THE PROGRAM -->
+                <div class="col-12 padded-b-2 padded-t sm-padded-t-2">
+
+                    <h3 class="editable">
+                        About the {{page.title}} Program
+                    </h3>
+                    {% for item in page.about %}
+                    <p class="editable justify">
+                        {{item.paragraph }}
+                    </p>
+                    {% endfor %}
+
+                </div>
+
+                <!-- ABOUT THE PROGRAM - ICONS -->
+                <div class="col-12 grid">
+
+                    {% for item in page.about-icons %}
+                    <div class="col-6_sm-12 padded-b-1">
+                        <p> <i class="{{item.icon }}"></i> {{item.description }}</p>
+                    </div>
+                    {% endfor %}
+
+                </div>
+
+                <!-- COACHING OUTCOMES -->
+                <div class="col-12 grid">
+
+                    <div class="col-12 padded-tb">
+
+                        <h3 class="editable">
+                            Coaching Outcomes
+                        </h3>
+        
+                    </div>
+
+                    {% for item in page.outcomes %}
+                    <div class="col-6_sm-12 padded-1 padded-t-0 white-text sm-padded-l-0 sm-padded-r-0">
+                        <div class="bg-extra-light-blue bg-radius-lg padded">
+                            <p>{{item.title }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+
+                <!-- PROGRAM DEFINITION -->
+                <div class="col-12 padded-tb">
+
+                    <h3 class="editable">
+                        What is {{page.title }}?
+                    </h3>
+
+                    {% for item in page.program-definition %}
+                    <p class="editable justify">
+                        {{item.paragraph }}
+                    </p>
+                    {% endfor %}
+
+                </div>
+
+                <!-- REQUIREMENTS -->
+                <div class="col-12 padded-b sm-padded-t">
+
+                    <h3 class="editable">
+                        Requirements
+                    </h3>
+
+                    <ul class="padded-l-1">
+                        {% for item in page.requirements %}
+                        <li>{{item.title }}</li>
+                        {% endfor %}
+                    </ul>
+
+                </div>
+
+                <!-- DESIGN BY -->
+                <div class="col-12 padded-b grid-middle">
+                    <div class="col-12 padded-t-0 sm-padded-t">
+                        <h4 class="editable">
+                            Designed by
+                        </h4>
+                    </div>
+                    <div class="col-3_sm-4 padded padded-l-0 padded-t">
+                        <img src="{{page.designed-by_image }}" class="bg-radius-lg" />
+                    </div>
+                    <div class="col-9_sm-8 padded padded-t padded-l-0">
+                        <h3 class="small-text editable">
+                            <strong>Cynthia Baldwin</strong>
+                        </h3>
+                        <p class="editable">
+                            Expert Coach &amp; Dvelop Space Founder
+                        </p>
+                    </div>
+                    <div class="col-12 padded-b padded-t-0">
+                        {% for item in page.designed-by %}
+                        <p class="editable justify">
+                            {{item.paragraph }}
+                        </p>
+                        {% endfor %}
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- SIDEBAR -->
+            <div class="col-4_sm-12 grid">
+
+                <div class="col-12 padded">
+                    <div class="bg-extra-light-blue bg-radius-md padded sticky-sidebar white-text">
+                        <div class="center">
+                            <a href="#" class="button-inverted margin-b-2 center editable">Start the Program</a>
+                        </div>
+                        <h5 class="padded-l editable">
+                            Development Areas
+                        </h5>
+                        <ul class="padded-l-2">
+                            {% for item in page.development-areas %}
+                            <li>{{item.title }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</section>

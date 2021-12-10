@@ -1,0 +1,18 @@
+palette:
+  black_color: '#000000'
+  grey_color: '#EFEFEF'
+  white_color: '#FFFFFF'
+  yellow_color: '#FFC800'
+  light-yellow_color: '#F2D16D'
+  blue_color: '#0057FF'
+  light-blue_color: '#325CD9'
+  extra-light-blue_color: '#0468BF'
+texto:
+  body-font-family: "'Montserrat', sans-serif;"
+  menu-text_color: '#0057FF'
+  mobile-menu-text_color: '#0057FF'
+  footer-text_color: '#000000'
+
+  
+
+  

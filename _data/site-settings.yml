@@ -1,0 +1,25 @@
+general:
+  logo_image:
+  logo-size: 70%
+  mobile-logo_image:
+  mobile-logo-size: 100%
+  explore-logo-size: 50%
+  form-email:
+technical:
+  google-fonts-embed:
+  google-analytics-embed:
+  cookie-banner: false
+  tracking-scripts-after-cookie-acceptance-embed:
+seo:
+  site_name: Dvelop Space | Grow your human skills for a successful life
+  title: Dvelop Space | Grow your human skills for a successful life
+  description: >-
+    Te ayudo a comunicar tu marca personal digital y lograr tus objetivos en
+    Linkedin.
+  keywords:
+    - >-
+      marca personal, linkedin, marca personal digital, linkedin tips, hispanic
+      business, hispanic marketing, hispanic woman, marca personal online
+  social_image:
+  author: Dvelop Space
+  favicon_image:

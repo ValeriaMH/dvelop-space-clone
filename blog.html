@@ -1,0 +1,182 @@
+---
+layout: default
+seo:
+  title: Blog | Dvelop Space
+  description:
+  social_image:
+  keywords:
+  hide-from-google: true
+banner_image: /images/dvelop-space1.jpg
+---
+
+<!-- BANNER & MENU -->
+<header>
+
+    {% include header-nav.html %}
+
+    <div class="grid padded capped-width">
+
+        <div class="col-6_sm-12 grid">
+
+            <!-- FEATURED POST BLOG PAGE -->
+            {% assign featured-posts = site.posts | where_exp: "post", "post.featured-post == true" %}
+
+            {% for post in featured-posts limit: 1 %}
+
+            <div class="col-12 padded-1 padded-t-0"> 
+
+                <a href="{{ post.url }}">
+                    <div class="bg-image square bg-radius-md" style="background-image: url('{{ post.featured_image }}');"></div>
+                    <div class="padded-t-1 padded-b-1">
+                        {% for item in post.categories %}
+                            <span class="tag"> {{ item }} </span>
+                        {% endfor %}
+                        <h2 class="margin-t-1"> {{ post.title }} </h2>
+                        <p> {{ post.description }} </p>
+                    </div>
+                </a>
+                
+                
+            </div>
+
+            {% endfor %}
+            
+        </div>
+
+        <div class="col-6_sm-12 grid-top">
+
+            <div class="col-12 padded-sm padded-l-2">
+                <h3 class="big-text-2">Dvelop Space' Picks</h3>
+            </div>
+
+            <!-- FEATURED BLOCK PER CATEGORY -->
+            <div class="col-12 grid">
+                    
+                {% assign featured-categories = site.posts | where_exp: "post", "post.featured-category == true" %}
+
+                {% for post in featured-categories limit: 4 %}
+
+                <div class="col-6 padded-sm padded-l-2"> 
+
+                    <a href="{{ post.url }}">
+                        <div class="padded-t-1 padded-b-1">
+                            {% for item in post.categories limit: 1 %}
+                                <span class="tag"> {{ item }} </span>
+                            {% endfor %}
+                            <h2 class="margin-t-1 normal-text"> {{ post.title }} </h2>
+                        </div>
+                    </a>
+                    
+                    
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+            <!-- FEATURED BLOCK PER CATEGORY (LUEGO BORRAR)-->
+            <div class="col-12 grid">
+                    
+                {% assign featured-categories = site.posts | where_exp: "post", "post.featured-category == true" %}
+
+                {% for post in featured-categories limit: 4 %}
+
+                <div class="col-6 padded-sm padded-l-2"> 
+
+                    <a href="{{ post.url }}">
+                        <div class="padded-t-1 padded-b-1">
+                            {% for item in post.categories limit: 1 %}
+                                <span class="tag"> {{ item }} </span>
+                            {% endfor %}
+                            <h2 class="margin-t-1 normal-text"> {{ post.title }} </h2>
+                        </div>
+                    </a>
+                    
+                    
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+            <!-- SUSCRIBE FORM -->
+            <div class="col-12 padded-sm padded-l-2">
+
+                <div class="bg-extra-light-blue white-text padded bg-radius-md blog-signup">
+                    <h2 class="medium-text">Suscribe to the blog </h2>
+                    <p class="margin-b-0">The best source of information for your development. Join us.</p>
+                    <form class="email-signup" action="https://formspree.io/your@email.com" method="POST">
+                        <input type="email" name="_replyto" placeholder="Your Email">
+                        <input type="submit" value="Send" class="button" />
+                    </form>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+</header>
+
+<!-- BLOG LIST -->
+<section class="padded padded-t-0">
+
+   <div class="grid">
+       <div class="col-12 margin-b-1 padded-1">
+           <h1 class="big-text">latest articles.</h1>
+       </div>
+
+       {% for post in site.posts limit: 8 %}
+
+       <div class="col-3_xs-12 post-item padded-1">
+           <div class="bg-image square" style="background-image: url('{{ post.featured_image }}');"></div>
+           <div class="padded-t-1 padded-b-1">
+               {% for item in post.categories %}
+                   <span class="tag"> {{ item }} </span>
+               {% endfor %}
+               <h2 class="margin-t-1"> {{ post.title }} </h2>
+               <p> {{ post.description }} </p>
+               <a href="{{ post.url }}" class="button-subtle"> Read More &#8702; </a>
+           </div>
+       </div>
+       
+       {% endfor %}
+
+   </div>
+</section>
+
+<!-- EXPLORE CATEGORIES -->
+
+<section>
+
+    <div class="grid padded padded-t-0">
+
+        <div class="col-4 padded-1">
+
+            <h2>Explore another topic</h2>
+            <p>Want to go deeper on a subject?<br>Explore some of our other topics.</p>
+
+        </div>
+
+        <div class="col-8 grid">
+
+                {% for item in site.archives %}
+
+                <div class="col-4 padded-sm center">
+
+                    <a href="{{item.url }}">
+                        <div class="bg-blue padded white-text">
+                            <span> {{ item.category }} </span>
+                        </div>
+                    </a>
+
+                </div>
+
+                {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>

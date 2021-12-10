@@ -1,0 +1,165 @@
+---
+layout: default
+title: Team Development
+seo:
+  title: Team Development | Dvelop Space
+  description: Grow your human skills for a successful life
+  social_image:
+  keywords: ['marca personal, linkedin, marca personal digital, linkedin tips, hispanic business, hispanic marketing, hispanic woman, marca personal online']
+  hide-from-google: true
+category: team development
+banner-header_image: /images/dvelop-space4.jpg
+cards:
+- title: Explore
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsum amet quas maxime velit facilis, nostrum quos. Dolor suscipit tenetur praesentium recusandae quasi placeat iusto reprehenderit, consequatur unde fuga eius.
+- title: Learn
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsum amet quas maxime velit facilis, nostrum quos. Dolor suscipit tenetur praesentium recusandae quasi placeat iusto reprehenderit, consequatur unde fuga eius.  
+- title: Dvelop
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsum amet quas maxime velit facilis, nostrum quos. Dolor suscipit tenetur praesentium recusandae quasi placeat iusto reprehenderit, consequatur unde fuga eius.  
+---
+
+<!------------------------ BANNER & MENU ------------------>
+
+<header class="tall-80 tall-40-md tall-50-sm">
+
+    {% include header-nav.html %}
+
+    <div class="grid relative">
+        <div class="col-6_sm-12 padded-t-17 center subject-title sm-padded-t xs-padded-t-lg">
+            <h1>team development.</h1>
+        </div>
+        <div class="col-6_sm-12 padded padded-t-1 padded-b-0 padded-r-2">
+            <div class="bg-image square" style="background-image: url('{{ page.banner-header_image }}');"></div>
+        </div>
+    </div>
+
+</header>
+
+<!------------------------ DESCRIPTION ------------------>
+
+<section>
+
+    <!-- CARDS SUBJECT -->
+    <div class="grid padded-sm capped-width-md">
+
+        {% for item in page.cards %}
+        <div class="col-4_sm-12 padded-sm padded-t md-padded-05">
+            <div class="padded bg-radius-md border-black card-sub">
+                <h3>{{item.title }}</h3>
+                <p>{{item.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<section>
+
+<!-- CONTENT -->
+<div class="grid">
+
+    <div class="col-9_md-12 grid padding-special" id="sub-content">
+        <div class="col-12 padded-b md-padded-t">
+            <h2 class="semi-big-text">Team Development </h2>
+            <p class="justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit adipisci dolorem eveniet ducimus ullam molestias sint quis asperiores doloribus, error saepe minima excepturi tempore enim debitis. Consectetur voluptatibus sit aperiam.</p>
+            <p class="justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit adipisci dolorem eveniet ducimus ullam molestias sint quis asperiores doloribus, error saepe minima excepturi tempore enim debitis. Consectetur voluptatibus sit aperiam.</p>
+        </div>
+
+        <!-- FEATURED PROGRAM -->
+        <div class="col-12 grid">
+
+            <div class="col-12">
+                <h2 class="medium-text">Featured Programs</h2>
+            </div>
+
+            {% include featured-program-page.html %}
+
+        </div>
+
+        <div class="col-12 padded-b padded-t">
+            <h2 class="medium-text">Place a sub-heading here</h2>
+            <p class="justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit adipisci dolorem eveniet ducimus ullam molestias sint quis asperiores doloribus, error saepe minima excepturi tempore enim debitis. Consectetur voluptatibus sit aperiam.</p>
+            <p class="justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit adipisci dolorem eveniet ducimus ullam molestias sint quis asperiores doloribus, error saepe minima excepturi tempore enim debitis. Consectetur voluptatibus sit aperiam.</p>
+        </div>
+
+        <!-- BLOG POSTS -->
+        <div class="col-12 grid">
+            {% for post in site.posts limit:2 %}
+                {% include post-loop-item-square.html %}
+            {% endfor %}
+        </div>
+
+        <div class="col-12">
+            <h2 class="medium-text">Place a sub-heading here</h2>
+            <p class="justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit adipisci dolorem eveniet ducimus ullam molestias sint quis asperiores doloribus, error saepe minima excepturi tempore enim debitis. Consectetur voluptatibus sit aperiam.</p>
+            <p class="justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit adipisci dolorem eveniet ducimus ullam molestias sint quis asperiores doloribus, error saepe minima excepturi tempore enim debitis. Consectetur voluptatibus sit aperiam.</p>
+        </div>
+
+        <!-- VIDEO -->
+        <div class="col-12 padded-tb">
+            <div class="embed-container bg-radius-md">
+                <iframe src="https://www.youtube.com/embed/o9uzJ0LgvT0" frameborder="0" allowfullscreen></iframe>
+              </div>
+        </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="col-3_md-12 grid-top">
+
+        <div class="col-12">
+            {% include social-share-page.html %}
+        </div>
+
+        <!-- FEATURED MEMBERSHIP -->
+        <div class="col-12_md-6_sm-12 padded padded-r-1 padded-t-lg md-padded-1 sm-text-center sm-padded-t-1">
+
+            <div class="bg-extra-light-blue white-text padded-lg bg-radius-lg">
+                <h2 class="medium-text">My coaching plan</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati vel itaque officiis excepturi velit expedita pariatur nobis amet voluptas suscipit ullam repellat, hic architecto mollitia? Vel commodi nisi provident tenetur.</p>
+                <div class="center">
+                    <a href="#" class="button-inverted">Get started</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MORE RESOURCES -->
+        <div class="col-12 padded padded-r-1 padded-t-05 md-padded-1 hide-md">
+
+            <div class="bg-extra-light-blue white-text padded-lg bg-radius-lg block no-border-b">
+                <h2 class="medium-text">More Resources</h2>
+                <a href="#">Lorem</a>
+                <a href="#">Lorem</a>
+                <a href="#">Lorem</a>
+                <a href="#">Lorem</a>
+                <a href="#">Lorem</a>
+                <a href="#">Lorem</a>
+                <a href="#">Lorem</a>
+            </div>
+
+        </div>
+
+        <!-- SUSCRIBE FORM -->
+        <div class="col-12_md-6_sm-12 padded padded-r-1 md-padded-1 padded-t-05">
+
+            <div class="bg-extra-light-blue white-text padded-lg bg-radius-lg center">
+                <h2 class="medium-text">Suscribe for more </h2>
+                <p>Suscribe for the latest programs and free resources</p>
+                <form class="email-signup" action="https://formspree.io/your@email.com" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" />
+                    <input type="email" name="_replyto" placeholder="Your Email" />
+                    <input type="submit" value="Send" class="button" />
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
