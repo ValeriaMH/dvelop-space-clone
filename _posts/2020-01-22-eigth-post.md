@@ -3,6 +3,7 @@ layout: post
 title: Ken Wilber's Four Cuadrants 
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur
 author: Cynthia Baldwin
+comments: true
 featured: true
 categories: [leadership, team development]
 featured-category: true
